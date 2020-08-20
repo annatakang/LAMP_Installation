@@ -28,11 +28,11 @@ systemctl enable mariadb
 mysqladmin create wordpress
 
 ## Create a user for the wp db
-mysql -e "GRANT ALL on wordpress.* to wordpress@localhost identified by 'wordpress$';
+mysql -e "GRANT ALL on wordpress.* to wordpress@localhost identified by 'wordpress123';
 mysql -e "FLUSH PRIVILEGES";
 
 # Secure Mariadb, using -e to escape the backspace xters
-echo -e "\n\nrootpassword123\nrootpassword123\n\n\n\n\n" | mysql_secure_installati$
+echo -e "\n\nrootpassword123\nrootpassword123\n\n\n\n\n" | mysql_secure_installation
 
 # Download and extract WordPress
 TMP_DIR=$(mktemp -d)
