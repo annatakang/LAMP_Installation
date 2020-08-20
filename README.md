@@ -1,2 +1,2 @@
 # LAMP_Installation
-Automating LAMP Installation
+Automating LAMP Installation on CentOS
